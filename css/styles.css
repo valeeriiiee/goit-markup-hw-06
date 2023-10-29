@@ -230,7 +230,7 @@ a[href="tel:+11(000)111-11-11"]:focus {
   border: 1px solid #2e2f4266;
   border-radius: 4px;
   transition: 250ms;
-  transition-property: color, border-color, background-color, shadow;
+  transition-property: color, border-color, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-icon {
@@ -252,7 +252,7 @@ a[href="tel:+11(000)111-11-11"]:focus {
   border: 1px solid #2e2f4266;
   border-radius: 4px;
   transition: 250ms;
-  transition-property: color, border-color, background-color, shadow;
+  transition-property: color, border-color, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding: 8px 16px;
   font-size: 12px;
@@ -261,7 +261,41 @@ a[href="tel:+11(000)111-11-11"]:focus {
   line-height: 14px;
   letter-spacing: 0.48px;
 }
+.agree-checkbox {
+  position: relative;
+  left: 19px;
+  opacity: 0;
+  height: 16px;
+  width: 16px;
+  margin: 0;
+}
 .checkbox-label {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.agree-check-icon {
+  fill: none;
+  margin-right: 8px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: 250ms;
+  transition-property: border-color, background-color, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-label .agree-checkbox:focus + .agree-check-icon,
+.checkbox-label .agree-checkbox:checked:focus + .agree-check-icon {
+  outline: 2px solid #2e2f4266;
+}
+.checkbox-label .agree-checkbox:checked + .agree-check-icon {
+  background-color: var(--IRIS);
+  border-color: var(--IRIS);
+  fill: var(--WHITE);
+  outline: none;
+  stroke: var(--WHITE);
+  stroke-width: 0.2;
+}
+.agree-text {
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;

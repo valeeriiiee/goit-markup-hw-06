@@ -76,8 +76,7 @@
                   <use href="./images/icons.svg#user"></use>
                 </svg>
               </label>
-            </form>
-            <form class="service-form">
+
               <label for="name" class="service-label">
                 <span class="input-label">Phone</span>
                 <input type="text" class="service-input" />
@@ -85,8 +84,7 @@
                   <use href="./images/icons.svg#phone"></use>
                 </svg>
               </label>
-            </form>
-            <form class="service-form">
+
               <label for="name" class="service-label">
                 <span class="input-label">Email</span>
                 <input type="text" class="service-input" />
@@ -94,6 +92,7 @@
                   <use href="./images/icons.svg#email"></use>
                 </svg>
               </label>
+
               <label for="comment" class="service-label">
                 <span class="input-label">Comment</span>
                 <textarea
@@ -102,16 +101,16 @@
                   placeholder="Text input"
                 ></textarea>
               </label>
-            </form>
-            <form class="service-form-checkbox">
-              <label class="checkbox-label">
-                <input
-                  type="checkbox"
-                  name="accept"
-                  value="I accept the terms and conditions of the Privacy Policy"
-                  checked
-                />I accept the terms and conditions of the
-                <a href="#" class="policy-link">Privacy Policy</a>
+
+              <label for="agree" class="checkbox-label">
+                <input type="checkbox" name="agree" class="agree-checkbox" />
+                <svg width="16" height="16" class="agree-check-icon">
+                  <use href="./images/icons.svg#checkbox"></use>
+                </svg>
+                <span class="agree-text">
+                  I accept the terms and conditions of the
+                  <a href="#" class="policy-link">Privacy Policy</a>
+                </span>
               </label>
             </form>
             <button type="submit" class="send-button">Send</button>
