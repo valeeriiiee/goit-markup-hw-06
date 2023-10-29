@@ -230,7 +230,7 @@ a[href="tel:+11(000)111-11-11"]:focus {
   border: 1px solid #2e2f4266;
   border-radius: 4px;
   transition: 250ms;
-  transition-property: color, border-color, background-color;
+  transition-property: color, border-color, background-color, shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-icon {
@@ -252,7 +252,7 @@ a[href="tel:+11(000)111-11-11"]:focus {
   border: 1px solid #2e2f4266;
   border-radius: 4px;
   transition: 250ms;
-  transition-property: color, border-color, background-color;
+  transition-property: color, border-color, background-color, shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding: 8px 16px;
   font-size: 12px;
@@ -427,6 +427,59 @@ a[href="tel:+11(000)111-11-11"]:focus {
 }
 .social-media-icon svg {
   fill: white;
+}
+.subscribe-footer {
+  padding-left: 80px;
+}
+.subscribe-p {
+  color: var(--WHITE);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+.subscribe-input {
+  height: 40px;
+  width: 264px;
+  background-color: var(--NAVY-BLUE);
+  border: 1px solid var(--WHITE);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.48px;
+  color: var(--WHITE);
+  padding: 8px 16px;
+  transition: 250ms;
+  transition-property: color, border-color, background-color, shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-input:hover {
+  border: 2px solid var(--WHITE);
+}
+.subscribe-button {
+  display: inline-flex;
+  fill: var(--WHITE);
+  color: var(--WHITE);
+  background-color: var(--IRIS);
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  padding: 8px 24px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 16px;
+  margin-left: 24px;
+  position: relative;
+  top: 2px;
 }
 /* END OF FOOTER STYLES */
 /* END OF STUDIO STYLES */
