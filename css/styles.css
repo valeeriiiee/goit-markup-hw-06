@@ -631,6 +631,12 @@ a[href="tel:+11(000)111-11-11"]:focus {
     width: 428px;
   }
 
+  .hero-header {
+    font-size: 36px;
+    letter-spacing: 0.72px;
+    line-height: 40px;
+  }
+
   .advantages-title {
     font-size: 36px;
     text-align: center;
@@ -656,6 +662,12 @@ a[href="tel:+11(000)111-11-11"]:focus {
 @media (min-width: 768px) {
   .container {
     width: 768px;
+  }
+
+  .hero-header {
+    font-size: 56px;
+    letter-spacing: 1.12px;
+    line-height: 60px;
   }
 
   .advantages-item,
@@ -712,11 +724,5 @@ a[href="tel:+11(000)111-11-11"]:focus {
 
   .customers-list-item {
     flex-basis: calc(100% / 6 - 24px);
-  }
-}
-
-@media (max-width: 767px) {
-  .whatwedo-section {
-    display: none;
   }
 }
