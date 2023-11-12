@@ -433,8 +433,13 @@ a[href="tel:+11(000)111-11-11"]:focus {
 /* FOOTER STYLES */
 .footer {
   background-color: var(--NAVY-BLUE);
-  padding: 100px 0px 100px 156px;
   display: flex;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-evenly;
 }
 .logo-footer {
   color: var(--CLOUD);
@@ -449,21 +454,21 @@ a[href="tel:+11(000)111-11-11"]:focus {
 .p-footer {
   color: var(--CLOUD);
 }
+.social-media-section {
+  padding: 0;
+}
 .social-media-title {
   color: var(--WHITE);
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
-  text-align: ;
-  margin-left: 120px;
   margin-top: 0;
 }
 .social-media-list {
   margin: 0;
   padding: 0;
   justify-content: center;
-  margin-left: 120px;
   gap: 16px;
 }
 .social-media-icon {
@@ -478,8 +483,8 @@ a[href="tel:+11(000)111-11-11"]:focus {
 .social-media-icon svg {
   fill: white;
 }
-.subscribe-footer {
-  padding-left: 80px;
+.subscribe-section {
+  padding: 0;
 }
 .subscribe-p {
   color: var(--WHITE);
