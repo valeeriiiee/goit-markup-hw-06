@@ -62,8 +62,16 @@ body {
 .header .d-flex {
   align-items: center;
 }
-.header .list {
+.header-list {
+  display: flex;
   gap: 40px;
+  list-style-type: none;
+  justify-content: space-around;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .link {
   text-decoration: none;
@@ -74,10 +82,18 @@ body {
   font-size: 18px;
   font-weight: 800;
   letter-spacing: 0.54px;
-  margin-right: 76px;
 }
 .logo-header span {
   color: var(--IRIS);
+}
+.header-contact-info {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  flex-wrap: wrap;
 }
 .header-link {
   font-size: 16px;
@@ -631,6 +647,10 @@ a[href="tel:+11(000)111-11-11"]:focus {
     width: 428px;
   }
 
+  .desktop-nav {
+    display: none;
+  }
+
   .hero-header {
     font-size: 36px;
     letter-spacing: 0.72px;
@@ -666,6 +686,10 @@ a[href="tel:+11(000)111-11-11"]:focus {
 @media (min-width: 768px) {
   .container {
     width: 768px;
+  }
+
+  .desktop-nav {
+    display: block;
   }
 
   .hero-header {
@@ -706,6 +730,10 @@ a[href="tel:+11(000)111-11-11"]:focus {
   .subscribe-input {
     width: 264px;
   }
+
+  .service {
+    flex-basis: calc(100% / 2 - 24px);
+  }
 }
 
 @media (min-width: 1440px) {
@@ -732,5 +760,9 @@ a[href="tel:+11(000)111-11-11"]:focus {
 
   .customers-list-item {
     flex-basis: calc(100% / 6 - 24px);
+  }
+
+  .service {
+    flex-basis: calc(100% / 3 - 24px);
   }
 }
