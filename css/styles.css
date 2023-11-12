@@ -637,6 +637,10 @@ a[href="tel:+11(000)111-11-11"]:focus {
     line-height: 40px;
   }
 
+  .modal {
+    width: 392px;
+  }
+
   .advantages-title {
     font-size: 36px;
     text-align: center;
@@ -668,6 +672,10 @@ a[href="tel:+11(000)111-11-11"]:focus {
     font-size: 56px;
     letter-spacing: 1.12px;
     line-height: 60px;
+  }
+
+  .modal {
+    width: 408px;
   }
 
   .advantages-item,
