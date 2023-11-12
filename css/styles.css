@@ -631,6 +631,15 @@ a[href="tel:+11(000)111-11-11"]:focus {
     width: 428px;
   }
 
+  .advantages-title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .advantages-icon {
+    display: none;
+  }
+
   .footer {
     text-align: center;
   }
@@ -652,6 +661,14 @@ a[href="tel:+11(000)111-11-11"]:focus {
   .advantages-item,
   .team-members-item {
     flex-basis: calc(100% / 2 -24px);
+  }
+
+  .advantages-title {
+    text-align: left;
+  }
+
+  .whatwedo-section {
+    display: none;
   }
 
   .customers-list-item {
@@ -679,6 +696,18 @@ a[href="tel:+11(000)111-11-11"]:focus {
   .advantages-item,
   .team-members-item {
     flex-basis: calc(100% / 4 - 24px);
+  }
+
+  .advantages-title {
+    font-size: 20px;
+  }
+
+  .advantages-icon {
+    display: block;
+  }
+
+  .whatwedo-section {
+    display: block;
   }
 
   .customers-list-item {
