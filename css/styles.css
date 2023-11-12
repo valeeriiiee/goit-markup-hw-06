@@ -31,7 +31,6 @@ body {
   line-height: 24px;
 }
 .container {
-  /* width: 1440px; */
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -361,7 +360,10 @@ a[href="tel:+11(000)111-11-11"]:focus {
   font-weight: 700;
   letter-spacing: 0.72px;
 }
-.services .list {
+.whatwedo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 }
 /* END OF WHAT ARE WE DOING SECTION STYLES*/
@@ -369,8 +371,9 @@ a[href="tel:+11(000)111-11-11"]:focus {
 .team {
   background-color: var(--CLOUD);
 }
-.team .list {
+.team-members-list {
   gap: 24px;
+  justify-content: center;
 }
 .team-members-item {
   background-color: white;
@@ -384,6 +387,7 @@ a[href="tel:+11(000)111-11-11"]:focus {
   margin: 0;
   padding: 0;
   justify-content: center;
+  gap: 24px;
 }
 .team-socials {
   background-color: var(--IRIS);
@@ -439,7 +443,9 @@ a[href="tel:+11(000)111-11-11"]:focus {
 }
 .footer-inner {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 72px;
 }
 .logo-footer {
   color: var(--CLOUD);
@@ -501,6 +507,7 @@ a[href="tel:+11(000)111-11-11"]:focus {
   background-color: var(--NAVY-BLUE);
   border: 1px solid var(--WHITE);
   border-radius: 4px;
+  margin-bottom: 16px;
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
@@ -623,6 +630,18 @@ a[href="tel:+11(000)111-11-11"]:focus {
   .container {
     width: 428px;
   }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer-inner {
+    justify-content: center;
+  }
+
+  .subscribe-input {
+    width: -webkit-fill-available;
+  }
 }
 
 @media (min-width: 768px) {
@@ -638,6 +657,18 @@ a[href="tel:+11(000)111-11-11"]:focus {
   .customers-list-item {
     flex-basis: calc(100% / 3 - 24px);
   }
+
+  .footer {
+    text-align: left;
+  }
+
+  .footer-inner {
+    justify-content: space-between;
+  }
+
+  .subscribe-input {
+    width: 264px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -652,5 +683,11 @@ a[href="tel:+11(000)111-11-11"]:focus {
 
   .customers-list-item {
     flex-basis: calc(100% / 6 - 24px);
+  }
+}
+
+@media (max-width: 767px) {
+  .whatwedo-section {
+    display: none;
   }
 }
