@@ -424,8 +424,8 @@ a[href="tel:+11(000)111-11-11"]:focus {
 .customers-list-item:focus {
   border-color: var(--IRIS);
 }
-.customers-svg:hover,
-.customers-svg:focus {
+.customers-list-item:hover svg,
+.customers-list-item:focus svg {
   fill: var(--IRIS);
 }
 
