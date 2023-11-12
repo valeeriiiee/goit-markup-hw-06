@@ -411,13 +411,24 @@ a[href="tel:+11(000)111-11-11"]:focus {
   border: 1px solid var(--LIGHT-SLATE);
   border-radius: 4px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 16px 32px;
+  flex-basis: calc(100% / 2 - 24px);
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
-.customers-link svg {
+.customers-list-item svg {
   fill: var(--LIGHT-SLATE);
 }
+.customers-list-item:hover,
+.customers-list-item:focus {
+  border-color: var(--IRIS);
+}
+.customers-list-item:hover svg,
+.customers-list-item:focus svg {
+  fill: var(--IRIS);
+}
+
 /* END OF CUSTOMER SECTION STYLES */
 /* FOOTER STYLES */
 .footer {
@@ -613,14 +624,28 @@ a[href="tel:+11(000)111-11-11"]:focus {
   .container {
     width: 768px;
   }
-}
 
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px;
+  .advantages-item,
+  .team-members-item {
+    flex-basis: calc(100% / 2 -24px);
   }
 
-  .advantages-item {
+  .customers-list-item {
+    flex-basis: calc(100% / 3 - 24px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1440px;
+  }
+
+  .advantages-item,
+  .team-members-item {
     flex-basis: calc(100% / 4 - 24px);
+  }
+
+  .customers-list-item {
+    flex-basis: calc(100% / 6 - 24px);
   }
 }
